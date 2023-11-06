@@ -1,6 +1,7 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
   functions = "functions" # Directory where serverless functions are located
+  ignore = "submodules"
 
 [build.environment]
   # Set environment variables needed for your backend
