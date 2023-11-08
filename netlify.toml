@@ -1,7 +1,6 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
   functions = "mothers-api" # Directory where serverless functions are located
-  ignore = "submodules"
 
 [build.environment]
   # Set environment variables needed for your backend
@@ -11,7 +10,7 @@
   directory = "mothers/build" # Directory containing the Svelte app's build output
 
 [[redirects]]
-  from = "/api/*" # Redirect API requests to serverless functions
+  from = "/mothers-api/*" # Redirect API requests to serverless functions
   to = "/.netlify/functions/api"
   status = 200
 
