@@ -1,13 +1,11 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
   functions = "mothers-api" # Directory where serverless functions are located
+  publish = "/mothers/build" # Directory containing the Svelte app's build output
 
 [build.environment]
   # Set environment variables needed for your backend
   GOOGLE_APPLICATION_CREDENTIALS = "our-access-404113-ba8e70863a01.json"
-
-[build.publish]
-  directory = "public" # Directory containing the Svelte app's build output
 
 [[redirects]]
   from = "/mothers-api/*" # Redirect API requests to serverless functions
