@@ -7,7 +7,7 @@
   GOOGLE_APPLICATION_CREDENTIALS = "our-access-404113-ba8e70863a01.json"
 
 [build.publish]
-  directory = "mothers/build" # Directory containing the Svelte app's build output
+  directory = "/mothers/build" # Directory containing the Svelte app's build output
 
 [[redirects]]
   from = "/mothers-api/*" # Redirect API requests to serverless functions
