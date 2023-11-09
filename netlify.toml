@@ -1,7 +1,7 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
-  functions = "/mothers-api" # Directory where serverless functions are located
-  publish = "/mothers/build" # Directory containing the Svelte app's build output
+  functions = "mothers-api" # Directory where serverless functions are located
+  publish = "mothers/build" # Directory containing the Svelte app's build output
 
 [build.environment]
   # Set environment variables needed for your backend
@@ -13,6 +13,6 @@
   status = 200
 
 [[redirects]]
-  from = "/mothers/*" # Redirect all other routes to the Svelte app
-  to = "/mothers/index.html"
+  from = "/*" # Redirect all other routes to the Svelte app
+  to = "/index.html"
   status = 200
