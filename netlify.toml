@@ -14,5 +14,5 @@
 
 [[redirects]]
   from = "/mothers/*" # Redirect all other routes to the Svelte app
-  to = "/index.html"
+  to = "/mothers/index.html"
   status = 200
