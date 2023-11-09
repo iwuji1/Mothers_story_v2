@@ -2,7 +2,6 @@
   import * as d3 from 'd3';
   import { scaleBand, scaleLinear } from "d3-scale";
   import { max } from "d3-array";
-  export let data;
 
   import WMimg from '$lib/components/wm_img.svelte'
   import Stars from '$lib/components/star.svelte'
@@ -31,24 +30,6 @@
 .title-img {
   position: relative;
   height: 100vh;
-}
-
-.test-stars {
-  display: flex;
-  width: 100vw;
-  height: 90vh;
-  flex-direction: row;
-}
-
-.back-vis {
-  position: relative;
-  margin: 0%;
-}
-
-.test-text {
-  position: absolute;
-  color: #ffffff;
-  left: 25%;
 }
 
 .title-text {
@@ -81,16 +62,12 @@
     transform: translate(0vw, 0vh);
   }
 
-  .test-text {
-    left: 0%;
-  }
-
   .title-text h1 {
     font-size: 5em;
     flex: 10%;
   }
 
-  .text-titel p {
+  .text-title p {
     font-size: 1em;
     text-align: center;
   }
@@ -111,18 +88,6 @@
       <p>Reflecting on Motherhood for BHM 2023</p>
     </div>
   </div>
-
-  <!-- <div class="test-stars">
-    <div class="back-vis">
-      <Stars/>
-    </div>
-    <div class="test-text">
-      <h1>Welcome to SvelteKit</h1>
-    </div>
-    <div class="test-text">
-      <h1>au;sboauvsfiwyavsbfiwasubf i;eavuksdb</h1>
-    </div>
-  </div> -->
 
   <BHM />
   <She />
