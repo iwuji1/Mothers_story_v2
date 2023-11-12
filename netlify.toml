@@ -8,12 +8,12 @@
   GOOGLE_APPLICATION_CREDENTIALS = "our-access-404113-ba8e70863a01.json"
 
 [[redirects]]
-  from = "/mothers-api/*" # Redirect API requests to serverless functions
-  to = "/.netlify/functions/api"
-  status = 200
-
-[[redirects]]
-  from = "/mothers/*" # Redirect all other routes to the Svelte app
+  from = "/*" # Redirect all other routes to the Svelte app
   to = "/index.html"
   status = 200
   force = true
+
+  # [[redirects]]
+  #   from = "/mothers-api/*" # Redirect API requests to serverless functions
+  #   to = "/.netlify/functions/api"
+  #   status = 200
