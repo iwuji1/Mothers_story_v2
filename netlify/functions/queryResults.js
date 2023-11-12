@@ -24,9 +24,16 @@ exports.handler = async function (event, context) {
     const jsonData = results.map((rows) => rows.map((row) => row));
 
     // Send the JSON data as the response
-    res.json(jsonData);
+    return {
+      statusCode: 200,
+      body: JSON.stringify(results),
+      jsonData
+    }
   } catch (error) {
     console.error('Error executing the query:', error);
-    res.status(500).json({ error: 'An error occurred' });
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Internal Server Error' }),
+    }
   }
 };
