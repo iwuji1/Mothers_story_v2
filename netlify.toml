@@ -8,7 +8,7 @@
   GOOGLE_APPLICATION_CREDENTIALS = "our-access-404113-ba8e70863a01.json"
 
 [functions]
-  included_files = ["netlify/functions/**"]
+  included_files = "netlify/functions/queryResults.js"
 
 [[redirects]]
   from = "/api/*" # Redirect API requests to serverless functions
