@@ -1,7 +1,7 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
-  functions = "mothers/netlify/functions/" # Directory where serverless functions are located
-  publish = "/build" # Directory containing the Svelte app's build output
+  functions = "netlify/functions/" # Directory where serverless functions are located
+  publish = "mothers/build" # Directory containing the Svelte app's build output
 
 [build.environment]
   # Set environment variables needed for your backend
