@@ -1,14 +1,14 @@
 [build]
   command = "npm run build" # Adjust the build command for your Svelte app
-  functions = ".netlify/functions-internal" # Directory where serverless functions are located
+  functions = "mothers/.netlify/functions-internal" # Directory where serverless functions are located
   publish = "mothers/build" # Directory containing the Svelte app's build output
-  include = [
-  "netlify/functions/*"
-  ]
 
 [build.environment]
   # Set environment variables needed for your backend
   GOOGLE_APPLICATION_CREDENTIALS = "our-access-404113-ba8e70863a01.json"
+
+[functions]
+  included_files = ["netlify/functions/**"]
 
 [[redirects]]
   from = "/api/*" # Redirect API requests to serverless functions
