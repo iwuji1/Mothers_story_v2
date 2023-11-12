@@ -6,7 +6,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/query-results');
+      const response = await fetch('api/query-results');
       if (!response.ok) {
           throw new Error('Network response was not ok');
         }

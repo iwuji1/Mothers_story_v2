@@ -74,8 +74,6 @@
 
 </style>
 
-{console.log(data)}
-
   <svg class="hbar">
     {#each data as d}
     <text class="chart-txt" text-anchor="start" x="0" dy=".3em" y={yScale(d.Ethnic_group) + yScale.bandwidth() / 2}>{d.Ethnic_group}</text>
