@@ -153,7 +153,7 @@ const Hbar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return d.single_parents;
     })
   ]).range([0, innerWidth]);
-  return `${escape(console.log(data))} <svg class="hbar svelte-f0alx6">${each(data, (d) => {
+  return `<svg class="hbar svelte-f0alx6">${each(data, (d) => {
     return `<text class="chart-txt svelte-f0alx6" text-anchor="start" x="0" dy=".3em"${add_attribute("y", yScale(d.Ethnic_group) + yScale.bandwidth() / 2, 0)}>${escape(d.Ethnic_group)}</text> <rect class="cbars svelte-f0alx6"${add_attribute("id", d.Ethnic_group, 0)} x="0"${add_attribute("y", yScale(d.Ethnic_group), 0)}${add_attribute("width", cScale(d.couple_parents), 0)}${add_attribute("height", yScale.bandwidth() / 2, 0)} fill="#ee3423"></rect> <rect class="cbars svelte-f0alx6"${add_attribute("id", d.Ethnic_group, 0)} x="0"${add_attribute("y", yScale(d.Ethnic_group) + yScale.bandwidth() / 2, 0)}${add_attribute("width", cScale(d.single_parents), 0)}${add_attribute("height", yScale.bandwidth() / 2, 0)} fill="#2f9744"></rect>`;
   })}</svg>`;
 });
