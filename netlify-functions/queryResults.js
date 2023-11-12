@@ -1,5 +1,8 @@
 const { BigQuery } = require('@google-cloud/bigquery');
-const projectId = 'your-project-id'; // Replace with your Google Cloud Project ID
+
+const projectID = 'our-access-404113';
+
+const bigquery = new BigQuery({ projectID });
 
 exports.handler = async function (event, context) {
   try {
